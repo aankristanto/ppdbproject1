@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/840569fac1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      id="wp-block-library-css"
+      href="http://kliksekolah.com/infoppdb/wp-includes/css/dist/block-library/style.min.css?ver=5.2.5"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="neve-style-css"
+      href="http://kliksekolah.com/infoppdb/wp-content/themes/neve/style.min.css?ver=2.4.0"
+      type="text/css"
+      media="all"
+    />
+    <title>Document</title>
+  </head>
+  <style>
+    .nav1 {
+      margin-top: 20px;
+    }
+    a {
+      text-decoration: none;
+      background-image: linear-gradient(currentColor, currentColor);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: 0% 2px;
+      transition: background-size 0.3s;
+    }
+
+    a:hover,
+    a:focus {
+      background-size: 100% 2px;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 8px;
+      margin-left: 12px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      padding: 12px 16px;
+      z-index: 1;
+      width: 290px;
+      margin-top: 40px;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+      text-decoration: none;
+      background-image: linear-gradient(currentColor, currentColor);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: 0% 2px;
+      transition: background-size 0.3s;
+    }
+    div.item {
+      vertical-align: top;
+      display: inline-block;
+      text-align: center;
+      width: 120px;
+    }
+    .caption {
+      display: block;
+    }
+    .baris1 {
+      display: flex;
+      justify-content: space-between;
+      margin-left: -300px;
+      margin-top: 50px;
+    }
+    .baris2 {
+      display: flex;
+      justify-content: space-between;
+      margin-left: -300px;
+    }
+  </style>
+  <body>
+    <!-- NAVBARRRR -->
+    <nav
+      class="header--row header-main hide-on-mobile hide-on-tablet layout-full-contained nv-navbar header--row"
+      data-row-id="main"
+      data-show-on="desktop"
+    >
+      <div class="header--row-inner header-main-inner light-mode">
+        <div class="container">
+          <div class="row">
+            <div
+              class="builder-item col-4 col-md-4 col-sm-4 hfg-item-left hfg-item-first"
+            >
+              <div
+                class="item--inner builder-item--logo"
+                data-section="title_tagline"
+                data-item-id="logo"
+              >
+                <div class="site-logo">
+                  <a
+                    class="brand"
+                    href="#"
+                    title="Info PPDB SMK Bina Nusantara Semarang"
+                    aria-label="Info PPDB SMK Bina Nusantara Semarang"
+                    ><img src="https://i.ibb.co/jzGdBbk/logobinus.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="builder-item col-8 col-md-8 col-sm-8 hfg-item-right hfg-item-last"
+            >
+              <div
+                class="item--inner builder-item--primary-menu has_menu"
+                data-section="header_menu_primary"
+                data-item-id="primary-menu"
+              >
+                <div style="margin-top: 40px;" class="nv-nav-wrap">
+                  <div
+                    role="navigation"
+                    class="style-border-bottom nav-menu-primary"
+                    aria-label="Primary Menu"
+                  >
+                    <ul id="nv-primary-navigation-main" class="primary-menu-ul">
+                      <li
+                        id="menu-item-20"
+                        class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-20"
+                      >
+                        <a href="/" aria-current="page">Home</a>
+                      </li>
+                      <li
+                        id="menu-item-157"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-157"
+                      >
+                        <a href="http://localhost:3000/informasi-ppdb"
+                          >Informasi PPDB</a
+                        >
+                      </li>
+                      <li
+                        id="menu-item-158"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-158"
+                      >
+                        <a href="#">Jadwal PPDB</a>
+                      </li>
+                      <li
+                        id="menu-item-173"
+                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-173"
+                      >
+                        <a href="http://binusasmg.sch.id">Pendaftaran</a>
+                      </li>
+                      <li
+                        id="menu-item-294"
+                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-294"
+                      >
+                        <a href="#"
+                          ><span class="menu-item-title-wrap">Alur PPDB</span>
+                          <div class="caret-wrap 5" tabindex="0">
+                            <span class="caret"></span></div
+                        ></a>
+                        <ul class="sub-menu">
+                          <li
+                            id="menu-item-327"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-327"
+                          >
+                            <a href="#">Alur PPDB Online</a>
+                          </li>
+                          <li
+                            id="menu-item-325"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-325"
+                          >
+                            <a href="#">Alur Finansial</a>
+                          </li>
+                          <li
+                            id="menu-item-326"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-326"
+                          >
+                            <a href="#">Alur Pemesanan Seragam</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li
+                        id="menu-item-272"
+                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-272"
+                      >
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="petunjukppdb"
+                          ><span class="menu-item-title-wrap"
+                            >Petunjuk PPDB Online</span
+                          >
+                          <div class="caret-wrap 9" tabindex="0"></div
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR END -->
+    <!-- JUMBOTRONNNN -->
+    <div
+      style="background-image: url('http://kliksekolah.com/infoppdb/wp-content/uploads/2019/09/IMG-20190821-WA0053.jpg'); background-size: cover; width: 99%; margin-left: 7px; height: 520px; margin-top: 20px;"
+      class="jumbotron jumbotron-fluid"
+    >
+      <center>
+        <div style="margin-top: 230px;" class="container">
+          <h1 style="font-size: 50px; color: white;" class="display-4">
+            <b><b>PENERIMAAN PESERTA DIDIK BARU</b></b>
+          </h1>
+          <h1 style="color: white;" class="display-4">
+            <b><b>Tahun Pelajaran 2020-2021</b></b>
+          </h1>
+        </div>
+      </center>
+    </div>
+    <!-- JUMBOTRON END -->
+    <!-- CAROUSELLL -->
+    <center>
+      <div
+        style="width: 40%;"
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="http://kliksekolah.com/infoppdb/wp-content/uploads/elementor/thumbs/8-odd0pwgth9y1g1znulgzki52r4ic5l8ximlwu10nb4.png"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="http://kliksekolah.com/infoppdb/wp-content/uploads/elementor/thumbs/9-odd0pzac1s1wevvke4ov9zfgja4fsok4j0kd9uwgsg.png"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="http://kliksekolah.com/infoppdb/wp-content/uploads/elementor/thumbs/10-odd0q31ot471pbq3s6bdjyhawtlwngz1vj6b6yqw3k.png"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </center>
+
+    <!-- CAROUSEL END -->
+    <!-- INFORMATIONNN -->
+
+    <!-- BARIS 1 -->
+    <div class="baris1">
+      <div style="width: 13%; margin-left: 500px;" class="item">
+        <img
+          src="https://bappeda.lampungtengahkab.go.id/wp-content/images/bg-informasi.png"
+          href="http://localhost:3000/informasi-ppdb"
+        />
+        <span class="caption"
+          ><b><b>Informasi PPDB</b></b></span
+        >
+      </div>
+      <div style="width: 11%;" class="item">
+        <img src="https://image.flaticon.com/icons/png/512/1497/1497835.png" />
+        <span class="caption"
+          ><b><b>Jadwal PPDB</b></b></span
+        >
+      </div>
+      <div style="width: 13%; margin-right: 130px;" class="item">
+        <img
+          src="https://www.jing.fm/clipimg/full/205-2056097_facts-about-tanzania-action-item-icon-png.png"
+        />
+        <span class="caption"
+          ><b><b>Pendaftaran Peserta Didik Baru</b></b></span
+        >
+      </div>
+    </div>
+    <!-- BARIS 2 -->
+    <div class="baris2">
+      <div style="width: 13%; margin-left: 500px;" class="item">
+        <img
+          src="https://pngimg.com/uploads/question_mark/question_mark_PNG124.png"
+        />
+        <span class="caption"
+          ><b><b>Alur PPDB Online</b></b></span
+        >
+      </div>
+      <div style="width: 13%;" class="item">
+        <img src="https://getdrawings.com/free-icon/handbook-icon-74.png" />
+        <span class="caption"
+          ><b><b>Petunjuk PPDB Online</b></b></span
+        >
+      </div>
+      <div style="width: 14%; margin-right: 130px;" class="item">
+        <img
+          src="https://pngimage.net/wp-content/uploads/2018/06/line-book-png-2.png"
+        />
+        <span class="caption"
+          ><b><b>Petunjuk Pemesanan Seragam</b></b></span
+        >
+      </div>
+    </div>
+    <!-- INFORMARION END -->
+    <!-- FOOTERRR -->
+    <div
+      style="margin-top: 60px; background-color: 	#303030; border-radius: 0px;"
+      class="card"
+    >
+      <center>
+        <div style="color: white;" class="card-header">
+          © 2020 - SMK Bina Nusantara Semarang
+        </div>
+      </center>
+    </div>
+    <!-- FOOTER END -->
+  </body>
+</html>
